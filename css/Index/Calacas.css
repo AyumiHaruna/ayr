@@ -1,0 +1,103 @@
+.calacas_block{
+    background-color: #4B6DD4;
+}
+
+.calacas_content{
+    background-color: #6D8AE1;
+    color: #FFF;
+    padding-bottom: 3vw;
+}
+
+.calacas_title {
+    font-family: 'Montserrat';
+    text-align: center;
+    font-size: 2em;
+    padding: 2vw;
+}
+.calacas_title span {
+    font-size: 1.4em;
+}
+
+.calacas_video {
+    padding: 0 4vw;
+}
+.calacas_video iframe{
+    width: 100%;
+    min-height: 30vw;
+    max-height: 100%;
+}
+
+.calacas_description {
+    font-family: "Montserrat";
+    padding: 0 2.5vw 0 1vw;
+}
+.calacas_description .title {
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 1vw;
+}
+.calacas_description .description{
+    font-size: 1.1em;
+    text-align: justify;
+}
+.calacas_description .aviso{
+    background-color: #9AAFEE;
+    padding: 1vw 2vw;
+    font-size: 1.1em;
+}
+.calacas_description .aviso img{
+    width: 50%;    
+    display:block;
+    margin: auto;
+}
+
+
+
+@media (max-width: 768.98px) {
+    .calacas_video iframe{
+        min-height: 40vw;
+    }
+    .calacas_description{
+        padding: 0 3vw;
+    }
+    .calacas_description .title {
+        font-size: 1.8em;
+    }
+    .calacas_description .aviso img{
+        width: 30%;  
+    }
+}
+
+@media (max-width: 576px) {
+    .calacas_content {
+        padding: 0 8vw 5vw 8vw;
+    }
+
+    .calacas_title {
+        font-size: 1.8em;
+        padding: 4vw 3vw;
+    }
+    .calacas_title span {
+        font-size: 1.2em;
+    }
+
+    .calacas_video iframe{
+        min-height: 50vw;
+    }
+
+    .calacas_description{
+        padding: 0 5vw;
+    }
+    .calacas_description .title {
+        font-size: 1.5em;
+        margin-bottom: 3vw;
+    }
+    .calacas_description .description{
+        font-size: 1em;
+        text-align: justify;
+    }
+    .calacas_description .aviso img{
+        width: 50%;  
+    }
+}

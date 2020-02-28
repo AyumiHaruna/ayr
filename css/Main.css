@@ -1,0 +1,38 @@
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/montserrat/Montserrat-Medium.ttf');
+}   
+@font-face {
+    font-family: 'Montserrat-light';
+    src: url('../fonts/montserrat/Montserrat-Light.ttf');
+}   
+@font-face {
+    font-family: 'Montserrat-bold';
+    src: url('../fonts/montserrat/Montserrat-Bold.ttf');
+}   
+@font-face {
+    font-family: 'Montserrat-semiBold';
+    src: url('../fonts/montserrat/Montserrat-SemiBold.ttf');
+}   
+
+@font-face {
+    font-family: 'Gotham-Rounded';
+    src: url('../fonts/gotham_rounded/Gotham-Rounded-Bold.ttf');
+}   
+
+body{
+    max-width: 100vw;
+    overflow-x: hidden;
+    font-size: 14px;
+    /* font-family: 'Montserrat'; */
+    font-family: 'Gotham-Rounded';
+
+    background-image: url('../img/F-N2.jpeg');
+    background-repeat: repeat;
+    background-attachment: fixed;
+    background-size: 60%;
+}
+
+.header_gobierno .nav-link{
+    color: #bb264e !important;
+}

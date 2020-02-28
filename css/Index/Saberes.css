@@ -1,0 +1,86 @@
+.saberes_block {
+    background-color: #3abccc;
+}
+
+.saberes_content {
+    background-color: #17a2b8;
+    color: #ffc107;
+    padding-bottom: 3vw;
+}
+
+.saberes_title {
+    font-family: 'Montserrat';
+    text-align: center;
+    font-size: 2.4em;
+    padding: 2vw;
+}
+.saberes_title span {
+    font-size: 1.3em;
+}
+
+.saberes_video {
+    padding: 0 4vw;
+}
+.saberes_video iframe{
+    width: 100%;
+    min-height: 30vw;
+    max-height: 100%;
+}
+
+.saberes_description {
+    font-family: "Montserrat";
+    padding: 0 2.5vw 0 1vw;
+}
+.saberes_description .title {
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 2vw;
+}
+.saberes_description .description{
+    font-size: 1.1em;
+    text-align: justify;
+}
+
+
+@media (max-width: 768.98px) {
+    .saberes_video iframe{
+        min-height: 40vw;
+    }
+    .saberes_description{
+        padding: 0 3vw;
+    }
+    .saberes_description .title {
+        font-size: 1.8em;
+    }
+}
+@media (max-width: 576px) {
+
+    .saberes_content {
+        padding: 0 8vw 5vw 8vw;
+    }
+
+    .saberes_title {
+        font-size: 2em;
+        padding: 4vw 3vw;
+    }
+    .saberes_title span {
+        font-size: 1.3em;
+    }
+
+    .saberes_video iframe{
+        min-height: 50vw;
+    }
+
+    .saberes_description{
+        padding: 0 5vw;
+    }
+    .saberes_description .title {
+        font-size: 1.5em;
+        margin-bottom: 3vw;
+    }
+    .saberes_description .description{
+        font-size: 1em;
+        text-align: justify;
+    }
+}

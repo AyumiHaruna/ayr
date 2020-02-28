@@ -1,0 +1,148 @@
+.Index_Ventana_Audio_Block {
+    background-color: #f1f1f1;
+}
+.Index_Ventana_Audio_Banner img {
+    width: 100%;
+    margin-bottom: 2vw;
+}
+
+
+.Sub_Player_Container .playerWrapper{
+    background-image: url('../../../img/components/cboard.jpg');
+    background-size: cover;
+    border: solid 1px #e6e6e6;
+    border-radius: 5px;
+    margin-bottom: 3vw;
+    -webkit-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.3);
+    -moz-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.3);
+    box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.3);
+}
+
+
+.Sub_Player_Container .playerList{
+    padding:  1vw 0;
+    font-size: 1.2em;
+    font-family: 'Montserrat';
+    background-color: rgba(0, 0, 0, 0.6);
+}
+.Sub_Player_Container .playerList .label{
+    margin-top: 0.5vw;
+    color: #e60073;
+    text-align: center;
+    font-weight: bold;
+}
+.Sub_Player_Container .playerList .listForm select{
+    font-family: 'Gotham-Rounded';
+    width: 100%;
+    color: #009999;
+    border-radius: 5px;
+    border: 1px solid #1f7a7a;
+    height: 2em;
+    padding: 0 2vw;
+}
+.Sub_Player_Container .playerList .listForm select:focus{
+    outline: none !important;
+    border: 1px solid #1f7a7a;
+    box-shadow: 0 0 10px #719ECE;
+}
+
+
+
+.Sub_Player_Container .Player_Select_PlayList{
+    max-height: 12vw;
+    overflow-y: auto;
+}
+
+.Sub_Player_Container .list_Element {
+    background: rgba(0, 0, 0, 0.3); 
+    border-radius: 10px;
+    border-bottom: solid 1px #4d4d4d;
+}
+.Sub_Player_Container .list_Element:hover{
+    background: rgba(0, 0, 0, 0.1); 
+    border-radius: 5px;
+    cursor: pointer;
+}
+.Sub_Player_Container .list_Element .type{
+    text-align: center;
+    font-size: 1.2em;
+    margin-top: 1em;
+    color: #f2f2f2;
+}
+.Sub_Player_Container .list_Element .info{
+    padding: 1em;
+    font-family: 'Gotham-Rounded';
+    font-size: 1.2em;
+    color: #ff6d61;
+    line-height: 1em;
+}
+.Sub_Player_Container .list_Element .info span{
+    font-family: 'Montserrat';
+    font-size: 0.8em;
+    font-weight: bold;
+    color: #f2f2f2;
+}
+
+
+.Sub_Player_Container .list_Element.active{
+    border-radius: 5px;
+    background: #cc0066;
+}
+.Sub_Player_Container .list_Element.active .type{
+    color: #c681e4;
+}
+.Sub_Player_Container .list_Element.active .info{
+    color: #cccccc;
+}
+.Sub_Player_Container .list_Element.active .info span{
+    color: #c681e4;
+}
+
+
+
+
+@media (max-width: 768.98px) {
+    .Sub_Player_Container .playerList{
+        font-size: 1.3em;
+    }
+    .Sub_Player_Container .Player_Select_PlayList{
+        max-height: 20vw;
+        overflow-y: auto;
+    }
+
+    .Sub_Player_Container .list_Element .info{
+        font-size: 0.9em;
+        line-height: 1.2em;
+    }
+    .Sub_Player_Container .list_Element .info span{
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 576px) {
+
+    .Index_Ventana_Audio_Banner img {
+        margin-top: 3vw;
+        margin-bottom: 2vw;
+    }
+
+    .Sub_Player_Container .playerList{
+        font-size: 1em;
+    }
+    .Sub_Player_Container .playerList .listForm {
+        padding: 5vw 10vw;
+    }
+
+
+    .Sub_Player_Container .playerWrapper{
+        margin-bottom: 8vw;
+        max-height: none;
+        height: auto;
+    }
+
+    .Sub_Player_Container .Player_Select_PlayList{
+        min-height: 50vw;
+        overflow-y: auto;
+    }
+
+}

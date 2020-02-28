@@ -1,0 +1,110 @@
+.nav_ayr{
+    /* background-color: rgba(0,0,0,0.4); */
+    background-color: #f8f9fa;
+    /* border-radius: 3px; */
+    /* border-bottom: 2px solid #b904c9; */
+    margin-bottom: 0vw;
+    font-family: "Montserrat";
+    font-size: 1em;
+    font-weight: bold;
+    letter-spacing: 0em;
+    width: 100%;    
+    -webkit-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.3);
+    -moz-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.3);
+    box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.3);
+}
+/* .nav_ayr .navBrand{
+    position: absolute;
+    width: 8vw;
+    top: -3vw;
+    border-radius: 50%;
+} */
+.nav_ayr .nav-item{
+    text-align: center;
+    line-height: 3vw;
+}
+.nav_ayr .nav-item.active {
+    border-bottom: solid 4px #33cccc;
+}
+.nav_ayr .nav-link{
+    padding: 0 1.5rem 0.5rem 1.5rem!important;
+    /* display: grid; */
+}
+
+.subNav {
+    background-image: url('../img/components/f_amarilo_g.jpeg');
+    background-size: 40%;
+    text-align: center;
+    padding: 0.5vw 0vw;
+    height: 10vw;
+    z-index: 3;
+    -webkit-box-shadow: 0px 6px 5px 0px rgba(0,0,0,0.5);
+    -moz-box-shadow: 0px 6px 5px 0px rgba(0,0,0,0.5);
+    box-shadow: 0px 6px 5px 0px rgba(0,0,0,0.5)
+}
+.subNav img {
+    width: 10vw;
+    margin-top: 1vw;
+}
+
+
+@media (max-width: 768.98px) {
+    .nav_ayr{
+        /* background-color: rgba(0,0,0,0.6); */
+        background-color: #f8f9fa;
+
+    }
+    /* .nav_ayr .navbar-toggler {
+        background: rgba(0, 102, 255, 0.5);
+        border: solid 1px #0066ff;
+        padding: 0.5em 1em;
+    } */
+    /* .nav_ayr .navBrand{
+        position: absolute;
+        width: 12vw;
+        top: -3vw;
+        right: 3vw;
+    } */
+    .subNav {
+        background-size: 40%;
+        padding: 0.7vw 0vw;
+        height: 11vw;
+    }
+    .subNav img {
+        width: 12vw;
+    }
+    .nav_ayr .nav-item{
+        line-height: 5vw;
+    }
+    .nav_ayr .nav-item .nav-link{
+        padding: 0 1.5rem 1rem 1.5rem!important;
+        display: inline;
+        line-height: 7vw;
+        font-size: 1.2em;
+    }
+}
+@media (max-width: 576px) { 
+    /* .nav_ayr .navBrand{
+        position: absolute;
+        width: 20vw;
+        top: -3vw;
+        right: 3vw;
+    } */
+    .nav_ayr .navbar-toggler {
+        padding: 0.3em 0.7em;
+    }
+    .nav_ayr .nav-item .nav-link{
+        padding: 0 1.5rem 1rem 1.5rem!important;
+        display: inline;
+        line-height: 14vw;
+        font-size: 1em;
+    }
+    .subNav {
+        background-size: 40%;
+        padding: 0.7vw 0vw;
+        height: 20vw;
+    }
+    .subNav img {
+        width: 22vw;
+    }
+}
