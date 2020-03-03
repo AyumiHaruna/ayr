@@ -4,13 +4,17 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>Alas y Raíces DEVELOPMENT</title>
+        <title>Alas y Raíces</title>
 
         <!-- bootstrap -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
         <!-- fontAwesome -->
         <script src="https://kit.fontawesome.com/035f9caf7c.js" crossorigin="anonymous"></script>
+        <!-- Axios HTTP client -->
+        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+        <!-- Sweet Alert -->
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9.8.2/dist/sweetalert2.all.min.js"></script>
         <!-- Carousel Siema -->
         <!-- <script src="vendor/siemajs/siema.min.js"></script> -->
         <!-- green audio player -->
@@ -42,7 +46,7 @@
         <!-- <link rel="stylesheet" href="css/Index/Components/Sub_Blog.css"> -->
 
         <!-- General Components -->
-        <link rel="stylesheet" href="css/Components/Title.css">
+        <!-- <link rel="stylesheet" href="css/Components/Title.css"> -->
         <link rel="stylesheet" href="css/Components/Modal_Audio.css">
         <!-- <link rel="stylesheet" href="css/Components/Modal_Video.css"> -->
     </head>
@@ -204,7 +208,7 @@
                     <div class="input-group">                        
                         <input type="mail" class="form-control" id="Suscribe_Input" placeholder="Tu_correo@electrónico">
                         <div class="input-group-prepend">
-                            <button type="button" id="Suscribe_button"> Suscríbete &nbsp; <i class="far fa-lg fa-envelope"></i> </button<>
+                            <button type="button" id="Suscribe_button" onClick="postSuscribe()"> Suscríbete &nbsp; <i class="far fa-lg fa-envelope"></i> </button<>
                         </div>
                     </div>
                 </div>
@@ -233,7 +237,8 @@
                             Síguenos en nuestras redes: <br> <br>
                             <a href="https://www.facebook.com/alasyraicescultura/"> <i class="fab fa-2x fa-facebook-f"></i> </a> &nbsp;
                             <a href="https://twitter.com/alasyraices"> <i class="fab fa-2x fa-twitter"></i> </a> &nbsp;
-                            <a href="https://www.instagram.com/alasyraicescultura/"> <i class="fab fa-2x fa-instagram"></i> </a>
+                            <a href="https://www.instagram.com/alasyraicescultura/"> <i class="fab fa-2x fa-instagram"></i> </a> &nbsp;
+                            <a href="https://www.youtube.com/c/AlasyRa%C3%ADcesCultura/"><i class="fab fa-2x fa-youtube"></i></a>
                             <br><br>
                             Teléfono: <a href="4155-0200">4155-0200 ext 9320</a> <br>
                             correo-e: <a href="alasyraices@cultura.gob.mx">alasyraices@cultura.gob.mx</a>

@@ -1,5 +1,4 @@
-//this code is from https://gist.github.com/mpetroff/4666657beeb85754611f */
-
+//this code is from https://gist.github.com/mpetroff/4666657beeb85754611f 
 window.addEventListener("load", function(){
     //toggle menu without jquery
     let collapseElements = document.querySelectorAll('[data-toggle="collapse"]');
@@ -47,5 +46,65 @@ window.addEventListener("load", function(){
 });
 
 
+//this function send a post with suscribe info
+function postSuscribe() {
 
+    //get suscribe - email value
+    let mail = document.getElementById("Suscribe_Input").value
+
+    //validate email format 
+    if (!(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(mail)))
+    {   //if format is wrong
+        //trow an alert from "sweetAlert.js"
+        Swal.fire({
+            title: 'Error!',
+            text: 'Formato de correo inválido',
+            icon: 'error',
+            confirmButtonText: 'Ok'
+        });
+        
+        return;
+    } 
+
+    //WHILE SUBMIT
+    //disable submit button
+    document.getElementById("Suscribe_button").disabled = true;
+    //trow a LOADING alert from "sweetAlert.js"
+    Swal.fire({
+        text: 'Enviando...',
+        imageUrl: 'img/loader.gif',
+        imageHeight: 100,
+        imageAlt: 'loader animation'
+    });
+
+    //else, post request from "Axios.js"
+    axios.post('http://localhost/ayrApi/public/suscribe', {
+        mail: mail
+      })
+      .then(function (response) {
+        console.log(response);
+        Swal.close()	
+        //trow an alert from "sweetAlert.js"
+        Swal.fire({
+            title: 'Gracias',
+            text: 'Tu correo se registro exitosamente',
+            icon: 'success',
+            confirmButtonText: 'Ok'
+        });
+      })
+      .catch(function (error) {
+        console.log(error);
+        Swal.close()	
+        //trow an alert from "sweetAlert.js"
+        Swal.fire({
+            title: 'Error!',
+            text: 'El servidor no responde, inténtelo mas tarde',
+            icon: 'error',
+            confirmButtonText: 'Ok'
+        });
+        
+        document.getElementById("Suscribe_button").disabled = false;
+        return;
+    });
+}
 
